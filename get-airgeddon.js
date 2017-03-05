@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 "use strict";
 
 /* import modules */
@@ -143,6 +141,8 @@ function download(pathOne, pathTwo, pathThree) {
   process.stdout.write("\x1b[32mDownloading...\x1b[0m\r");
 }
 
-checkOS();
-checkConnection("www.google.com");
-fsHandle();
+module["exports"] = function () {
+  checkOS();
+  checkConnection("www.google.com");
+  fsHandle();
+}
