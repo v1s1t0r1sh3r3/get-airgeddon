@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 "use strict";
 
 /* import modules */
@@ -11,13 +13,11 @@ const readline = require("readline");
 var filenameOne = "airgeddon.sh";
 var filenameTwo = "language_strings.sh";
 var filenameThree = "known_pins.db";
-var filenameFour = "pindb_checksum.txt";
 
 /* raw github URLs */
 var airgeddon_raw="https://raw.githubusercontent.com/v1s1t0r1sh3r3/airgeddon/master/" + filenameOne;
 var langstrings_raw="https://raw.githubusercontent.com/v1s1t0r1sh3r3/airgeddon/master/" + filenameTwo;
 var pindb_raw="https://raw.githubusercontent.com/v1s1t0r1sh3r3/airgeddon/master/" + filenameThree;
-var pindb_checksum_raw="https://raw.githubusercontent.com/v1s1t0r1sh3r3/airgeddon/master/" + filenameFour;
 
 /* check OS */
 function checkOS() {
@@ -68,8 +68,7 @@ function fsHandle() {
           download(
             "./airgeddon/" + filenameOne,
             "./airgeddon/" + filenameTwo,
-            "./airgeddon/" + filenameThree,
-            "./airgeddon/" + filenameFour
+            "./airgeddon/" + filenameThree
           );
         } else {
           console.error("\x1b[41m\x1b[37m%s\x1b[0m", "No write permissions, run as root");
@@ -87,8 +86,7 @@ function fsHandle() {
             download(
               path + "airgeddon/" + filenameOne,
               path + "airgeddon/" + filenameTwo,
-              path + "airgeddon/" + filenameThree,
-              path + "airgeddon/" + filenameFour
+              path + "airgeddon/" + filenameThree
             );
           } else {
             console.error("\x1b[41m\x1b[37m%s\x1b[0m", "No write permissions, run as root");
@@ -107,8 +105,7 @@ function fsHandle() {
             download(
               path + "/airgeddon/" + filenameOne,
               path + "/airgeddon/" + filenameTwo,
-              path + "/airgeddon/" + filenameThree,
-              path + "/airgeddon/" + filenameFour
+              path + "/airgeddon/" + filenameThree
             );
           } else {
             console.error("\x1b[41m\x1b[37m%s\x1b[0m", "No write permissions, run as root");
@@ -123,13 +120,12 @@ function fsHandle() {
 }
 
 /* download required files */
-function download(pathOne, pathTwo, pathThree, pathFour) {
+function download(pathOne, pathTwo, pathThree) {
 
   /* allocate streams for files */
   var airgeddon = fs.createWriteStream(pathOne);
   var langstrings = fs.createWriteStream(pathTwo);
   var pindb = fs.createWriteStream(pathThree);
-  var pindb_checksum = fs.createWriteStream(pathFour);
   
   https.get(airgeddon_raw, function(response) {
     response.pipe(airgeddon);
@@ -141,10 +137,6 @@ function download(pathOne, pathTwo, pathThree, pathFour) {
 
   https.get(pindb_raw, function(response) {
     response.pipe(pindb);
-  });
-
-  https.get(pindb_checksum_raw, function(response) {
-    response.pipe(pindb_checksum);
   });
 
   process.stdout.write("\r\x1b[K");
