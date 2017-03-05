@@ -1,0 +1,34 @@
+{
+  "name": "airgeddon",
+  "version": "1.0.0",
+  "description": "Download airgeddon required files from github.",
+  "os": [
+    "linux"
+  ],
+  "main": "get-airgeddon.js",
+  "bin": {
+    "get-airgeddon": "./get-airgeddon.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtonousou/get-airgeddon.git"
+  },
+  "keywords": [
+    "bash",
+    "linux",
+    "hacking",
+    "cracking",
+    "wireless",
+    "auditing",
+    "analyzing",
+    "WPA",
+    "WPS",
+    "WEP",
+    "AP"
+  ],
+  "author": "xtonousou <xtonousou@gmail.com> (https://xtonousou.github.io)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/xtonousou/get-airgeddon/issues"
+  }
+}
