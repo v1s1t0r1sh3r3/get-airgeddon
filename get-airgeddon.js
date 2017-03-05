@@ -143,8 +143,6 @@ function download(pathOne, pathTwo, pathThree) {
   process.stdout.write("\x1b[32mDownloading...\x1b[0m\r");
 }
 
-module["exports"] = function () {
-  checkOS();
-  checkConnection("www.google.com");
-  fsHandle();
-}
+checkOS();
+checkConnection("www.google.com");
+fsHandle();
