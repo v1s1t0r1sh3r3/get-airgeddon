@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 "use strict";
 
 /* import modules */
@@ -64,7 +62,7 @@ function fsHandle() {
         if (isWritable) {
           if (!fs.existsSync("./airgeddon/")) {
             process.stdout.write("\r\x1b[K");
-            process.stdout.write("\x1b[32mCreating directory...\r");
+            process.stdout.write("\x1b[32mCreating directory...\r\x1b[0m");
             fs.mkdirSync("./airgeddon/");
           }
           download(
@@ -83,7 +81,7 @@ function fsHandle() {
           if (isWritable) {
             if (!fs.existsSync(path + "airgeddon/")) {
               process.stdout.write("\r\x1b[K");
-              process.stdout.write("\x1b[32mCreating directory...\r");
+              process.stdout.write("\x1b[32mCreating directory...\r\x1b[0m");
               fs.mkdirSync(path + "airgeddon/");
             }
             download(
@@ -103,7 +101,7 @@ function fsHandle() {
           if (isWritable) {
             if (!fs.existsSync(path + "/airgeddon/")) {
               process.stdout.write("\r\x1b[K");
-              process.stdout.write("\x1b[32mCreating directory...\r");
+              process.stdout.write("\x1b[32mCreating directory...\r\x1b[0m");
               fs.mkdirSync(path + "/airgeddon/");
             }
             download(
@@ -150,7 +148,7 @@ function download(pathOne, pathTwo, pathThree, pathFour) {
   });
 
   process.stdout.write("\r\x1b[K");
-  process.stdout.write("\x1b[32mDownloading...\r");
+  process.stdout.write("\x1b[32mDownloading...\x1b[0m\r");
 }
 
 checkOS();
