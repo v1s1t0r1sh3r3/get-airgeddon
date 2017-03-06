@@ -1,4 +1,4 @@
-## get-airgeddon [![Travis](https://img.shields.io/travis/xtonousou/get-airgeddon.svg)]()
+## get-airgeddon [![Travis](https://img.shields.io/travis/xtonousou/get-airgeddon.svg)](https://travis-ci.org/xtonousou/get-airgeddon)
 
 ### Install
 
