@@ -150,5 +150,4 @@ function init() {
   fsHandle();
 }
 
-
 module.exports.init = init();
