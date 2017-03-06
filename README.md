@@ -14,4 +14,4 @@ You are now ready to use `airgeddon`
 
 ### Example
 
-[![asciicast](https://asciinema.org/a/105994.png)](https://asciinema.org/a/105994)
+<p align="center"><a href="https://asciinema.org/a/105994"><img src="https://asciinema.org/a/105994.png" alt="asciicast" height="125" width="125"/></a></p>
