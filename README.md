@@ -11,3 +11,7 @@
 - Done
 
 You are now ready to use `airgeddon`
+
+### Example
+
+[![asciicast](https://asciinema.org/a/105994.png)](https://asciinema.org/a/105994)
