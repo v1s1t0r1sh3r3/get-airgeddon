@@ -15,7 +15,7 @@
 
 ### Usage
 
-- `get-airgeddon`
+- `get-airgeddon -b [branch]` replace branch with the preferred one
 - Enter the directory you to store the files and press [ENTER]
 - Navigate to the newly created directory and run [airgeddon]
 
