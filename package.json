@@ -1,43 +1,43 @@
 {
-  "name": "get-airgeddon",
-  "version": "1.3.1",
-  "description": "Download airgeddon required files from github.",
-  "os": [
-    "linux"
-  ],
-  "main": "get-airgeddon.js",
-  "bin": {
-    "get-airgeddon": "./get-airgeddon.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xtonousou/get-airgeddon.git"
-  },
-  "keywords": [
-    "downloader",
-    "bash",
-    "linux",
-    "hacking",
-    "cracking",
-    "wireless",
-    "auditing",
-    "analyzing",
-    "WPA",
-    "WPS",
-    "WEP",
-    "AP"
-  ],
-  "author": "xtonousou <xtonousou@gmail.com> (https://xtonousou.github.io)",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/xtonousou/get-airgeddon/issues"
-  },
-  "dependencies": {
-    "async": "^2.1.5",
-    "cli-spinners": "^1.0.0",
-    "commander": "^2.0.0",
-    "is-online": "^6.1.0",
-    "is-reachable": "^2.3.2",
-    "ora": "^1.1.0"
-  }
+    "name": "get-airgeddon",
+    "version": "1.4.0",
+    "description": "Download airgeddon required files from github.",
+    "os": [
+        "linux"
+    ],
+    "main": "get-airgeddon.js",
+    "bin": {
+        "get-airgeddon": "./get-airgeddon.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xtonousou/get-airgeddon.git"
+    },
+    "keywords": [
+        "downloader",
+        "bash",
+        "linux",
+        "hacking",
+        "cracking",
+        "wireless",
+        "auditing",
+        "analyzing",
+        "WPA",
+        "WPS",
+        "WEP",
+        "AP"
+    ],
+    "author": "xtonousou <xtonousou@gmail.com> (https://xtonousou.github.io)",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/xtonousou/get-airgeddon/issues"
+    },
+    "dependencies": {
+        "async": "^2.1.5",
+        "chalk": "^1.1.3",
+        "cli-spinners": "^1.0.0",
+        "is-online": "^6.1.0",
+        "is-reachable": "^2.3.2",
+        "ora": "^1.1.0"
+    }
 }
