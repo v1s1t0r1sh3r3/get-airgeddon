@@ -24,11 +24,11 @@
   <a href="https://nodei.co/npm/get-airgeddon/"><img src="https://nodei.co/npm/get-airgeddon.png?downloads=true&downloadRank=true&stars=true"></a>&nbsp;&nbsp;&nbsp;<a href="https://nodei.co/npm/get-airgeddon/"><img src="https://nodei.co/npm-dl/get-airgeddon.png?months=9&height=3"></a>
 </div>
 
-### :computer: Installation
+### :package: Installation
 
 `npm install -g get-airgeddon` with root permissions
 
-### Usage
+### :computer: Usage
 
 ```
 
