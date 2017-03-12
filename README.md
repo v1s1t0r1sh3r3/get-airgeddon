@@ -7,7 +7,7 @@
 <br />
 
 <div align="center">
-  <a href="https://nodejs.org/api/documentation.html#documentation_stability_index"><img src="https://img.shields.io/badge/stability-experimental-orange.svg" alt="API stability"/></a><a href="https://badge.fury.io/js/get-airgeddon"><img src="https://badge.fury.io/js/get-airgeddon.svg" alt="npm version" height="19"></a><a href="https://travis-ci.org/xtonousou/get-airgeddon"><img src="https://img.shields.io/travis/xtonousou/get-airgeddon.svg" alt="Travis build" height="19"></a>
+  <a href="https://nodejs.org/api/documentation.html#documentation_stability_index"><img src="https://img.shields.io/badge/stability-experimental-orange.svg" alt="API stability"/></a>&nbsp;&nbsp;<a href="https://badge.fury.io/js/get-airgeddon"><img src="https://badge.fury.io/js/get-airgeddon.svg" alt="npm version" height="20"></a>&nbsp;&nbsp;<a href="https://travis-ci.org/xtonousou/get-airgeddon"><img src="https://img.shields.io/travis/xtonousou/get-airgeddon.svg" alt="Travis build" height="20"></a>
 </div>
 
 <div align="center">
@@ -28,7 +28,7 @@
 
 `npm install -g get-airgeddon` with root permissions
 
-### :octocat: Usage
+### Usage
 
 ```
 
@@ -44,10 +44,10 @@
   
 ```
 
-<a href="https://asciinema.org/a/106864" target="_blank"><img src="https://asciinema.org/a/106864.png" width="888" height="256" /></a>
+<a href="https://asciinema.org/a/106864" target="_blank"><img src="https://asciinema.org/a/106864.png" width="888" height="384" /></a>
 
 ### :pray: Support
 
-<a class="github-button" href="https://github.com/xtonousou/get-airgeddon" data-icon="octicon-star" data-style="mega" data-count-href="/xtonousou/get-airgeddon/stargazers" data-count-api="/repos/xtonousou/get-airgeddon#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star xtonousou/get-airgeddon on GitHub">Star</a>&nbsp;&nbsp;<a class="github-button" href="https://github.com/xtonousou/get-airgeddon/subscription" data-icon="octicon-eye" data-style="mega" data-count-href="/xtonousou/get-airgeddon/watchers" data-count-api="/repos/xtonousou/get-airgeddon#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch xtonousou/get-airgeddon on GitHub">Watch</a>&nbsp;&nbsp;<a class="github-button" href="https://github.com/xtonousou/get-airgeddon/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/xtonousou/get-airgeddon/network" data-count-api="/repos/xtonousou/get-airgeddon#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork xtonousou/get-airgeddon on GitHub">Fork</a>&nbsp;&nbsp;<a class="github-button" href="https://github.com/xtonousou" data-style="mega" data-count-href="/xtonousou/followers" data-count-api="/users/xtonousou#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @xtonousou on GitHub">Follow @xtonousou</a>
+:octocat: [![GitHub watchers](https://img.shields.io/github/watchers/xtonousou/get-airgeddon.svg?style=social&label=Watch)](https://github.com/xtonousou/get-airgeddon/subscription)&nbsp;&nbsp;[![GitHub stargazers](https://img.shields.io/github/stars/xtonousou/get-airgeddon.svg?style=social&label=Star)](https://github.com/xtonousou/get-airgeddon)&nbsp;&nbsp;[![GitHub forks](https://img.shields.io/github/forks/xtonousou/get-airgeddon.svg?style=social&label=Fork)](https://github.com/xtonousou/get-airgeddon/fork)&nbsp;&nbsp;[![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)](https://github.com/xtonousou)&nbsp;&nbsp;[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Download%20airgeddon%27s%20required%20files%20from%20github.%20Build%20with%20%3C3%20by%20xtonousou%20and%20contributors.)
 
 [airgeddon]: https://github.com/v1s1t0r1sh3r3/airgeddon "by v1s1t0r"
