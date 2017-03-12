@@ -1,6 +1,6 @@
 {
   "name": "get-airgeddon",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Download airgeddon required files from github.",
   "os": [
     "linux"
