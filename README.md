@@ -1,4 +1,4 @@
-[![NPM](https://nodei.co/npm/get-airgeddon.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/get-airgeddon/)[![NPM](https://nodei.co/npm-dl/get-airgeddon.png?months=9&height=3)](https://nodei.co/npm/get-airgeddon/)
+[![NPM](https://nodei.co/npm/get-airgeddon.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/get-airgeddon/)&nbsp;&nbsp;&nbsp;[![NPM](https://nodei.co/npm-dl/get-airgeddon.png?months=9&height=3)](https://nodei.co/npm/get-airgeddon/)
 
 ## get-airgeddon
 
@@ -19,12 +19,12 @@
 
  Options:
 
-  -h, --help	  output usage information
+  -h, --help	output usage information
   -v, --version	output the version number
   -b, --branch	output available branches and specify from which one to download
   
 ```
 
-<a href="https://asciinema.org/a/106864" target="_blank"><img src="https://asciinema.org/a/106864.png" width="102" height="80" /></a>
+<a href="https://asciinema.org/a/106864" target="_blank"><img src="https://asciinema.org/a/106864.png" height="307" /></a>
 
 [airgeddon]: https://github.com/v1s1t0r1sh3r3/airgeddon "by v1s1t0r"
