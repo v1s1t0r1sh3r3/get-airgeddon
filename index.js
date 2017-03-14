@@ -55,11 +55,6 @@ var airgeddon_raw,
 var customBranch = false;
 
 /**
- * Starts get-airgeddon.
- */
-init();
-
-/**
  * Starts the script. Handle function calls based on args.
  * @return {[boolean]} Returns true.
  */
@@ -134,7 +129,12 @@ function init() {
  */
 function usage() {
     console.log("\n" +
-        " Version: " + info(pkgjson.version) + " Usage: " + pkgjson.name + " [options]" + "\n" + "\n" + " " + emphasis("Download airgeddon required files from github") + "\n" + "\n" + " Options:" + "\n" + "\n" + "  -h, --help" + "\t" + "output usage information" + "\n" + "  -v, --version" + "\t" + "output the version number" + "\n" + "  -b, --branch" + "\t" + "output available branches and specify from which one to download" + "\n" + "\n");
+        " Version: " + info(pkgjson.version) + " Usage: " + pkgjson.name + " [options]" + "\n" + "\n" +
+        " " + emphasis("Download airgeddon required files from github") + "\n" + "\n" +
+        " Options:" + "\n" + "\n" +
+        "  -h, --help" + "\t" + "output usage information" + "\n" +
+        "  -v, --version" + "\t" + "output the version number" + "\n" +
+        "  -b, --branch" + "\t" + "output available branches and specify from which one to download" + "\n" + "\n");
     return true;
 }
 
@@ -348,3 +348,6 @@ function download(f, i, l, e, s) {
 
     return true;
 }
+
+/* export the module / start */
+module.exports = init();
