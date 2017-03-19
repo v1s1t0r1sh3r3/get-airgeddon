@@ -1,13 +1,13 @@
 {
   "name": "get-airgeddon",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "description": "Download airgeddon required files from github.",
   "os": [
     "linux"
   ],
-  "main": "index.js",
+  "main": "main.js",
   "bin": {
-    "get-airgeddon": "./index.js"
+    "get-airgeddon": "./main.js"
   },
   "repository": {
     "type": "git",

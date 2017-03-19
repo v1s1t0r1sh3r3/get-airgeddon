@@ -31,7 +31,7 @@ const emphasis = chalk.bold.underline.green;
 const highlight = chalk.bold.bgGreen.black;
 
 /* github info */
-const github_raw = "https://raw.githubusercontent.com"
+const github_raw = "https://raw.githubusercontent.com";
 const username = "v1s1t0r1sh3r3";
 const project = "airgeddon";
 var branch = "master";
@@ -179,7 +179,7 @@ function getRepoBranches(userName, projectName) {
         for (i = 0; i < branches.length; i++)
             availableBranches.push(branches[i].name);
         }
-    )
+    );
 
     return true;
 }
@@ -237,48 +237,44 @@ function prepare() {
     rl.question("Insert directory and press [ENTER]: ", (path) => {
         if (path === "") {
             canWrite("./", function(err, isWritable) {
+                if (err) console.error(error("No write permissions, run as root"));
                 if (isWritable) {
                     if (!fs.existsSync("./airgeddon/"))
                         fs.mkdirSync("./airgeddon/");
                     download("./airgeddon/" + filenameOne, "./airgeddon/" + filenameTwo, "./airgeddon/" + filenameThree, "./airgeddon/" + filenameFour, "./airgeddon/" + filenameFive);
-                } else {
-                    console.error(error("No write permissions, run as root"));
                 }
             });
         } else if (path.charAt(0) === "~") {
             var fixedPath = "/home/" + whoami.sync() + "/";
             if (fs.existsSync(fixedPath)) {
                 canWrite(fixedPath, function(err, isWritable) {
+                    if (err) console.error(error("No write permissions, run as root"));
                     if (isWritable) {
                         if (!fs.existsSync(fixedPath + "airgeddon/"))
                             fs.mkdirSync(fixedPath + "airgeddon/");
                         download(fixedPath + "airgeddon/" + filenameOne, fixedPath + "airgeddon/" + filenameTwo, fixedPath + "airgeddon/" + filenameThree, fixedPath + "airgeddon/" + filenameFour, fixedPath + "airgeddon/" + filenameFive);
-                    } else {
-                        console.error(error("No write permissions, run as root"));
                     }
                 });
             }
         } else if (path.slice(-1) === "/") {
             if (fs.existsSync(path)) {
                 canWrite(path, function(err, isWritable) {
+                    if (err) console.error(error("No write permissions, run as root"));
                     if (isWritable) {
                         if (!fs.existsSync(path + "airgeddon/"))
                             fs.mkdirSync(path + "airgeddon/");
                         download(path + "airgeddon/" + filenameOne, path + "airgeddon/" + filenameTwo, path + "airgeddon/" + filenameThree, path + "airgeddon/" + filenameFour, path + "airgeddon/" + filenameFive);
-                    } else {
-                        console.error(error("No write permissions, run as root"));
                     }
                 });
             }
         } else {
             if (fs.existsSync(path)) {
                 canWrite(path, function(err, isWritable) {
+                    if (err) console.error(error("No write permissions, run as root"));
                     if (isWritable) {
                         if (!fs.existsSync(path + "/airgeddon/"))
                             fs.mkdirSync(path + "/airgeddon/");
                         download(path + "/airgeddon/" + filenameOne, path + "/airgeddon/" + filenameTwo, path + "/airgeddon/" + filenameThree, path + "/airgeddon/" + filenameFour, path + "/airgeddon/" + filenameFive);
-                    } else {
-                        console.error(error("No write permissions, run as root"));
                     }
                 });
             }
