@@ -38,8 +38,6 @@
 
 ```
 
-<a href="https://asciinema.org/a/106864" target="_blank"><img src="https://asciinema.org/a/106864.png" width="888" height="384" /></a>
-
 ### :pray: Support
 
 [![GitHub watchers](https://img.shields.io/github/watchers/xtonousou/get-airgeddon.svg?style=social&label=Watch)](https://github.com/xtonousou/get-airgeddon/subscription)&nbsp;&nbsp;[![GitHub stargazers](https://img.shields.io/github/stars/xtonousou/get-airgeddon.svg?style=social&label=Star)](https://github.com/xtonousou/get-airgeddon)&nbsp;&nbsp;[![GitHub forks](https://img.shields.io/github/forks/xtonousou/get-airgeddon.svg?style=social&label=Fork)](https://github.com/xtonousou/get-airgeddon/fork)&nbsp;&nbsp;[![GitHub followers](https://img.shields.io/github/followers/xtonousou.svg?style=social&label=Follow)](https://github.com/xtonousou)&nbsp;&nbsp;[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Download%20airgeddon%27s%20required%20files%20from%20github.%20%20https://github.com/xtonousou/get-airgeddon%20%20https://www.npmjs.com/package/get-airgeddon)
