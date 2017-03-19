@@ -106,7 +106,7 @@ function init() {
             break;
         case "-v":
         case "--version":
-            console.log(" " + pkgjson.name + info(" v." + pkgjson.version));
+            console.log(" " + pkgjson.name + " " + info("v" + pkgjson.version));
             break;
         case "-h":
         case "--help":
