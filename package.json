@@ -2,6 +2,8 @@
   "name": "get-airgeddon",
   "version": "1.4.9",
   "description": "Download airgeddon required files from github.",
+  "author": "xtonousou <xtonousou@gmail.com> (https://xtonousou.github.io)",
+  "license": "GPL-3.0+",
   "os": [
     "linux"
   ],
@@ -27,8 +29,6 @@
     "WEP",
     "AP"
   ],
-  "author": "xtonousou <xtonousou@gmail.com> (https://xtonousou.github.io)",
-  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/xtonousou/get-airgeddon/issues"
   },
