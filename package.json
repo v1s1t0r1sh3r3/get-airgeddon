@@ -40,6 +40,6 @@
     "is-online": "^6.1.0",
     "is-reachable": "^2.3.2",
     "ora": "^1.1.0",
-    "username": "^2.0.0"
+    "username": "^4.1.0"
   }
 }
