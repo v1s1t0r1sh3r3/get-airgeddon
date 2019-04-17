@@ -30,16 +30,17 @@ const github_raw = 'https://raw.githubusercontent.com',
 var branch = 'master',
   availableBranches = [],
   filenameOne = 'airgeddon.sh',
-    // filenameOne = "airgeddon",
   filenameTwo = 'language_strings.sh',
   filenameThree = 'known_pins.db',
   filenameFour = 'README.md',
   filenameFive = 'LICENSE.md',
+  filenameSix = '.airgeddonrc',
   airgeddon_raw,
   langstrings_raw,
   pindb_raw,
   readme_raw,
   license_raw,
+  options_raw,
   customBranch = false,
   args = process.argv.slice(2)
 
@@ -173,6 +174,7 @@ function updateRawFiles () {
   pindb_raw = github_raw + '/' + username + '/' + project + '/' + branch + '/' + filenameThree
   readme_raw = github_raw + '/' + username + '/' + project + '/' + branch + '/' + filenameFour
   license_raw = github_raw + '/' + username + '/' + project + '/' + branch + '/' + filenameFive
+  options_raw = github_raw + '/' + username + '/' + project + '/' + branch + '/' + filenameSix
 
   return true
 }
@@ -187,12 +189,13 @@ function prepare () {
         if (err) console.error(error('No write permissions, run as root'))
         if (isWritable) {
           if (!fs.existsSync('./airgeddon/')) { fs.mkdirSync('./airgeddon/') }
-          download('./airgeddon/' +
-            filenameOne, './airgeddon/' +
-            filenameTwo, './airgeddon/' +
-            filenameThree, './airgeddon/' +
-            filenameFour, './airgeddon/' +
-            filenameFive)
+          download('./airgeddon/' + filenameOne,
+                   './airgeddon/' + filenameTwo,
+                   './airgeddon/' + filenameThree,
+                   './airgeddon/' + filenameFour,
+                   './airgeddon/' + filenameFive,
+                   './airgeddon/' + filenameSix,
+                  )
         }
       })
     } else if (path.charAt(0) === '~') {
@@ -202,12 +205,13 @@ function prepare () {
           if (err) console.error(error('No write permissions, run as root'))
           if (isWritable) {
             if (!fs.existsSync(fixedPath + 'airgeddon/')) { fs.mkdirSync(fixedPath + 'airgeddon/') }
-            download(fixedPath + 'airgeddon/' +
-              filenameOne, fixedPath + 'airgeddon/' +
-              filenameTwo, fixedPath + 'airgeddon/' +
-              filenameThree, fixedPath + 'airgeddon/' +
-              filenameFour, fixedPath + 'airgeddon/' +
-              filenameFive)
+            download(fixedPath + 'airgeddon/' + filenameOne,
+                     fixedPath + 'airgeddon/' + filenameTwo,
+                     fixedPath + 'airgeddon/' + filenameThree,
+                     fixedPath + 'airgeddon/' + filenameFour,
+                     fixedPath + 'airgeddon/' + filenameFive,
+                     fixedPath + 'airgeddon/' + filenameSix,
+                  )
           }
         })
       }
@@ -217,12 +221,13 @@ function prepare () {
           if (err) console.error(error('No write permissions, run as root'))
           if (isWritable) {
             if (!fs.existsSync(path + 'airgeddon/')) { fs.mkdirSync(path + 'airgeddon/') }
-            download(path + 'airgeddon/' +
-              filenameOne, path + 'airgeddon/' +
-              filenameTwo, path + 'airgeddon/' +
-              filenameThree, path + 'airgeddon/' +
-              filenameFour, path + 'airgeddon/' +
-              filenameFive)
+            download(path + 'airgeddon/' + filenameOne,
+                     path + 'airgeddon/' + filenameTwo,
+                     path + 'airgeddon/' + filenameThree,
+                     path + 'airgeddon/' + filenameFour,
+                     path + 'airgeddon/' + filenameFive,
+                     path + 'airgeddon/' + filenameSix,
+                  )
           }
         })
       }
@@ -232,12 +237,13 @@ function prepare () {
           if (err) console.error(error('No write permissions, run as root'))
           if (isWritable) {
             if (!fs.existsSync(path + '/airgeddon/')) { fs.mkdirSync(path + '/airgeddon/') }
-            download(path + '/airgeddon/' +
-              filenameOne, path + '/airgeddon/' +
-              filenameTwo, path + '/airgeddon/' +
-              filenameThree, path + '/airgeddon/' +
-              filenameFour, path + '/airgeddon/' +
-              filenameFive)
+            download(path + 'airgeddon/' + filenameOne,
+                     path + 'airgeddon/' + filenameTwo,
+                     path + 'airgeddon/' + filenameThree,
+                     path + 'airgeddon/' + filenameFour,
+                     path + 'airgeddon/' + filenameFive,
+                     path + 'airgeddon/' + filenameSix,
+                  )
           }
         })
       }
@@ -248,17 +254,18 @@ function prepare () {
   return true
 }
 
-function download (f, i, l, e, s) {
+function download (file1, file2, file3, file4, file5, file6) {
   /* create spinners with proper messages */
   const spinnerOne = ora('Downloading ' + filenameOne)
   const spinnerTwo = ora('Downloading ' + filenameTwo)
   const spinnerThree = ora('Downloading ' + filenameThree)
   const spinnerFour = ora('Downloading ' + filenameFour)
   const spinnerFive = ora('Downloading ' + filenameFive)
+  const spinnerSix = ora('Downloading ' + filenameSix)
 
   setTimeout(function () {
     spinnerOne.start()
-    var airgeddon = fs.createWriteStream(f)
+    var airgeddon = fs.createWriteStream(file1)
     https.get(airgeddon_raw, function (response) {
       response.pipe(airgeddon)
     })
@@ -266,7 +273,7 @@ function download (f, i, l, e, s) {
     spinnerTwo.start()
   }, 300)
   setTimeout(function () {
-    var langstrings = fs.createWriteStream(i)
+    var langstrings = fs.createWriteStream(file2)
     https.get(langstrings_raw, function (response) {
       response.pipe(langstrings)
     })
@@ -274,26 +281,33 @@ function download (f, i, l, e, s) {
     spinnerThree.start()
   }, 450)
   setTimeout(function () {
-    var pindb = fs.createWriteStream(l)
+    var pindb = fs.createWriteStream(file3)
     https.get(pindb_raw, function (response) {
       response.pipe(pindb)
     })
     spinnerThree.succeed('Downloaded ' + filenameThree)
   }, 500)
   setTimeout(function () {
-    var readme = fs.createWriteStream(e)
+    var readme = fs.createWriteStream(file4)
     https.get(readme_raw, function (response) {
       response.pipe(readme)
     })
     spinnerThree.succeed('Downloaded ' + filenameFour)
   }, 600)
   setTimeout(function () {
-    var license = fs.createWriteStream(s)
+    var license = fs.createWriteStream(file5)
     https.get(license_raw, function (response) {
       response.pipe(license)
     })
     spinnerThree.succeed('Downloaded ' + filenameFive)
   }, 650)
+  setTimeout(function () {
+    var license = fs.createWriteStream(file6)
+    https.get(options_raw, function (response) {
+      response.pipe(license)
+    })
+    spinnerThree.succeed('Downloaded ' + filenameSix)
+  }, 700)
 
   return true
 }
