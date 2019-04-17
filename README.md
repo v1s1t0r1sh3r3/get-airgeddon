@@ -1,5 +1,3 @@
-# UNMAINTAINED
-
 <h1 align="center">&#8594; get-airgeddon &#8592;</h1>
 
 <div align="center">
