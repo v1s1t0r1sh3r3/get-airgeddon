@@ -1,6 +1,6 @@
 {
   "name": "get-airgeddon",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "Download airgeddon required files from github.",
   "author": "xtonousou <xtonousou@gmail.com> (https://xtonousou.github.io)",
   "license": "GPL-3.0+",
