@@ -59,36 +59,32 @@ function init () {
       break;
     case '-b':
     case '--branch':
-      switch (args[1]) {
-        default:
-          isOnline().then(online => {
-            if (online) {
-              getRepoBranches(username, project);
-              var i,
-                branchesString = '',
-                interval = setInterval(function () {
-                  if (availableBranches.length > 0) {
-                    clearInterval(interval);
-                    for (i = 0; i < availableBranches.length; i++) { branchesString += availableBranches[i] + ', ' }
-                    console.log('Available branches: ' +
-                    extra(branchesString.replace(/,\s*$/, '')));
-                    insertBranch()
-                  }
-                }, 10);
-              var intervalTwo = setInterval(function () {
-                if (customBranch) {
-                  clearInterval(intervalTwo);
-                  updateRawFiles();
-                  prepare()
-                }
-              }, 10)
-            } else {
-              console.error(error('No Internet connection'));
-              process.exit(1)
+      isOnline().then(online => {
+        if (online) {
+          getRepoBranches(username, project);
+          var i,
+            branchesString = '',
+            interval = setInterval(function () {
+              if (availableBranches.length > 0) {
+                clearInterval(interval);
+                for (i = 0; i < availableBranches.length; i++) { branchesString += availableBranches[i] + ', ' }
+                console.log('Available branches: ' +
+                extra(branchesString.replace(/,\s*$/, '')));
+                insertBranch()
+              }
+            }, 10);
+          var intervalTwo = setInterval(function () {
+            if (customBranch) {
+              clearInterval(intervalTwo);
+              updateRawFiles();
+              prepare()
             }
-          });
-          break
-      }
+          }, 10)
+        } else {
+          console.error(error('No Internet connection'));
+          process.exit(1)
+        }
+      });
       break;
     case '-v':
     case '--version':
