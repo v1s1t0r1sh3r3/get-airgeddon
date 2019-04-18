@@ -20,14 +20,7 @@
 
 ### :package: Installation
 
-`~# npm install -g get-airgeddon` with root permissions
-
-It will be installed in your _npm installation directory_. By default, it is located at `/usr/local/bin`, so then you can invoke it using example commands like these:
-
-```
-nodejs /usr/local/bin/get-airgeddon -h
-nodejs /usr/local/bin/get-airgeddon -b
-```
+`npm install -g get-airgeddon` with root permissions
 
 ### :computer: Usage
 
