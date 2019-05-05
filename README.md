@@ -1,7 +1,7 @@
 <h1 align="center">&#8594; get-airgeddon &#8592;</h1>
 
 <div align="center">
-  <a href="https://nodejs.org/api/documentation.html#documentation_stability_index"><img src="https://img.shields.io/badge/stability-experimental-orange.svg" alt="API stability"/></a>&nbsp;&nbsp;<a href="https://badge.fury.io/js/get-airgeddon"><img src="https://badge.fury.io/js/get-airgeddon.svg" alt="npm version" height="20"></a>&nbsp;&nbsp;<a href="https://travis-ci.org/xtonousou/get-airgeddon"><img src="https://img.shields.io/travis/xtonousou/get-airgeddon.svg" alt="Travis build" height="20"></a>
+  <a href="https://nodejs.org/api/documentation.html#documentation_stability_index"><img src="https://img.shields.io/badge/stability-experimental-orange.svg" alt="API stability"/></a>&nbsp;&nbsp;<a href="https://badge.fury.io/js/get-airgeddon"><img src="https://badge.fury.io/js/get-airgeddon.svg" alt="npm version" height="20"></a>&nbsp;&nbsp;<a href="https://travis-ci.org/xtonousou/get-airgeddon"><img src="https://travis-ci.org/v1s1t0r1sh3r3/get-airgeddon.svg" alt="Travis build" height="20"></a>
 </div>
 
 <div align="center">
