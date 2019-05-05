@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xtonousou/get-airgeddon.git"
+    "url": "git+https://github.com/v1s1t0r1sh3r3/get-airgeddon.git"
   },
   "keywords": [
     "downloader",
@@ -30,7 +30,7 @@
     "AP"
   ],
   "bugs": {
-    "url": "https://github.com/xtonousou/get-airgeddon/issues"
+    "url": "https://github.com/v1s1t0r1sh3r3/get-airgeddon/issues"
   },
   "dependencies": {
     "async": "^2.1.5",
