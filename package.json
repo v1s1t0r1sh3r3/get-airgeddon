@@ -40,6 +40,12 @@
     "is-online": "^6.1.0",
     "is-reachable": "^2.3.2",
     "ora": "^1.1.0",
-    "username": "^4.1.0"
-  }
+    "username": "^4.1.0",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
