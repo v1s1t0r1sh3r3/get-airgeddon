@@ -5,7 +5,8 @@
   "author": "xtonousou <xtonousou@gmail.com> (https://xtonousou.github.io)",
   "license": "GPL-3.0+",
   "os": [
-    "linux"
+    "linux",
+    "darwin"
   ],
   "main": "main.js",
   "bin": {
@@ -40,6 +41,12 @@
     "is-online": "^6.1.0",
     "is-reachable": "^2.3.2",
     "ora": "^1.1.0",
+    "snyk": "^1.205.0",
     "username": "^4.1.0"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
