@@ -46,7 +46,8 @@
   },
   "scripts": {
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "test": "snyk test"
   },
   "snyk": true
 }
