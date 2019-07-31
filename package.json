@@ -5,8 +5,7 @@
   "author": "xtonousou <xtonousou@gmail.com> (https://xtonousou.github.io)",
   "license": "GPL-3.0+",
   "os": [
-    "linux",
-    "darwin"
+    "linux"
   ],
   "main": "main.js",
   "bin": {
