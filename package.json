@@ -41,7 +41,7 @@
     "is-reachable": "^2.3.2",
     "ora": "^1.1.0",
     "username": "^4.1.0",
-    "snyk": "^1.192.3"
+    "snyk": "^1.231.0"
   },
   "scripts": {
     "snyk-protect": "snyk protect",
