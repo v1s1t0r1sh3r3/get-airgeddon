@@ -33,7 +33,7 @@
     "url": "https://github.com/v1s1t0r1sh3r3/get-airgeddon/issues"
   },
   "dependencies": {
-    "async": "^2.1.5",
+    "async": "^3.2.2",
     "chalk": "^1.1.3",
     "cli-spinners": "^1.0.0",
     "github-api": "^3.2.2",
